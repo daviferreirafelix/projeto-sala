@@ -1,0 +1,40 @@
+div{
+    margin: 150px;
+}
+
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 1s;
+    transition-timing-function: cubic-bezier(.15, .89, .85, .25);
+
+    animation-name: teste;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.box:hover{
+    animation-play-state: paused;
+}
+
+@keyframes teste{
+    60%{
+        background-color: orangered;
+        border-radius: 50%;
+    }
+    
+    80%{
+        transform: translate(200%, -30%);
+    }
+
+    to{
+        transform: translate(calc(100vw - 500px), 0);
+    }
+}

@@ -1,0 +1,78 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+#voltar{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+fieldset{
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+form{
+    text-align: center;
+    width: 40%;
+    margin: 10% auto;
+}
+
+h1{
+    text-align: center;
+}
+
+input, label{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+label{
+    text-decoration: underline;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+}
+
+.enviar, 
+.limpar{
+    display: inline;
+    color: white;
+}
+
+.enviar{
+    background-color: green;
+}
+
+.limpar{
+    background-color: red;  
+}
+
+.enviar:hover, 
+.limpar:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="../../Styles/css_form_estilizado.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULÁRIO DE CADASTRO DE CLIENTE</h1>
+    </header>
+    
+    <form>
+        <fieldset>
+            <legend>Cadastro</legend>
+                    <fieldset>
+                        <legend>Dados de Usuário</legend>
+                            <p class="pNome">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" maxlength="50" required>
+                            </p>
+                            
+                            <p class="pCpf">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="12" autocomplete="off" required>
+                            </p>
+
+                            <p class="pTelefone">
+                                <label for="tel">Telefone</label>
+                                <input type="number" name="tel" id="tel" placeholder="(xx) x xxxx-xxxx" required>
+                            </p>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Endereço de Usuário</legend>
+                            <p class="pBairro">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro" placeholder="Bairro"
+                                required>
+                            </p>
+                        
+                            <p class="pRua">
+                                <label for="rua">Nome da Rua</label>
+                                <input type="text" name="rua" id="rua" placeholder="Rua" required>
+                            </p>
+
+                            <p class="pNumero">
+                                <label for="numero">Número da Residência</label>
+                                <input type="number" name="numero" id="numero" placeholder="Número" required>
+                            </p>
+                    </fieldset>
+
+                    <input type="submit" value="ENVIAR" class="enviar">
+                    <input type="reset" value="LIMPAR" class="limpar">
+                </fieldset>
+        </form>
+
+    <p id="voltar">
+        <a href="form_index.html">Voltar</a>
+    </p>
+</body>
+</html>

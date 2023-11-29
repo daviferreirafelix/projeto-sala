@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de Funcionários</title>
+        <link rel="stylesheet" href="styleForm.css">
+    </head>
+    <body>
+        <h1>FUNCIONÁRIOS</h1>
+            <fieldset>
+                <legend>Cadastro de Funcionários</legend>
+                    <fieldset>
+                        <legend>Dados</legend>
+                            <form action="#" method="post">
+                                <p class="pNome">
+                                    <label for="nome">Insira seu nome</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome" required autocomplete="off" maxlength="50">
+                                </p>
+
+                                <p class="pCpf">
+                                    <label for="cpf">Insira seu CPF</label>
+                                    <input type="text" name="cpf" id="cpf" placeholder="CPF" autocomplete="off" maxlength="12" required>
+                                </p>
+
+                                <p class="pNascimento">
+                                    <label for="nascimento">Insira sua data de nascimento</label>
+                                    <input type="date" required>
+                                </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Especificação do Funcionário</legend>
+                            <label for="tipoFuncionario">Tipo de Funcionário</label>
+                            <p class="pTipoFuncionario" name="tipoFuncionario" id="tipoFuncionario">
+                                <input type="radio" name="tipoFuncionario" value="0"> CLT
+                                <input type="radio" name="tipoFuncionario" value="1"> PJ
+                            </p>
+
+                            <p>
+                                <label for="setor">Qual o setor em que este funcionário trabalhará?</label>
+                                <select name="setor" id="setor">
+                                    <option value="AR">RH</option>
+                                    <option value="AF">Financeiro</option>
+                                    <option value="AA">Administrativo</option>
+                                </select>
+                            </p>
+
+                            <p class="pArquivos">
+                                <label for="arquivos">Envie os Documentos</label>
+                                <input type="file" name="arquivos" id="arquivos">
+                            </p>
+
+                            <input type="submit" value="ENVIAR" class="enviar">
+                            <input type="reset" value="LIMPAR" class="limpar">
+                        </form>
+                    </fieldset>
+            </fieldset>
+
+            <a href="form_index.html">Volte ao indice</a>
+    </body>
+</html>

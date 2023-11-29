@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de Colaboradores</title>
+        <link rel="stylesheet" href="styleForm.css">
+    </head>
+    <body>
+        <h1>EMPRESAS COLABORADORAS</h1>
+            <fieldset>
+                <legend>Cadastro de Empresas Colaboradoras</legend>
+                    <fieldset>
+                        <legend>Dados</legend>
+                            <form action="#" method="post">
+                                <p class="pNome">
+                                    <label for="nome">Insira o nome da empresa</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome" required autocomplete="off" maxlength="50">
+                                </p>
+
+                                <p class="pCNPJ">
+                                    <label for="cnpj">Insira o CNPJ</label>
+                                    <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ" autocomplete="off" required>
+                                </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Especificação do Cliente</legend>
+                            <label for="tipoEmpresa">Tipo de Empresa</label>
+                            <p class="pTipoEmpresa" name="tipoEmpresa" id="tipoCliente">
+                                <input type="radio" name="tipoEmpresa" value="0" checked> Nova
+                                <input type="radio" name="tipoEmpresa" value="1"> Já Cadastrada
+                            </p>
+
+                            <p class="pEndereco">
+                                <label for="endereco">Insira o Endereço</label>
+                                <input type="text" id="endereco" placeholder="Endereço">
+                            </p>
+
+                            <p class="pTelefone">
+                                <label for="telefone">Insira o Telefone</label>
+                                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                            </p>
+
+                            <input type="submit" value="ENVIAR" class="enviar">
+                            <input type="reset" value="LIMPAR" class="limpar">
+                        </form>
+                    </fieldset>
+            </fieldset>
+
+            <a href="form_index.html">Volte ao indice</a>
+    </body>
+</html>

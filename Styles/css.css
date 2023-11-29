@@ -1,0 +1,13 @@
+body{
+    color: white;
+    background-image: url("../assets/Img/angular.jpg");   
+    background-size: cover;
+}
+
+a:visited{
+    color: white;
+}
+
+a{
+    color: white;
+}

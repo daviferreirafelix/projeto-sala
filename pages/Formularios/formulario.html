@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>FORMULÁRIO</h1>
+        <fieldset>
+            <legend>Fale Conosco</legend>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Dados</legend>
+                        <p class="pNome">
+                            <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Nome:" maxlength="50" autocomplete="off" required>   
+                        </p>
+
+                        <p class="pEmail">
+                            <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email:" autocomplete="off" required>
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                            Assunto:
+                            <br>
+                                <P>
+                                    <input type="radio" name="assunto" value="0" checked>Pessoal
+                                    <input type="radio" name="assunto" value="1">Público
+                                </p>
+                            Enviar Para:
+                            <br>
+                                <p>
+                                    <input type="checkbox" name="presidente" id="presidente" checked>Presidente
+                                    <input type="checkbox" name="diretor" id="diretor"> Diretor
+                                </p>
+                                <p>
+                                    <label for="meses">Quantos meses trabalhando na empresa?</label>
+                                    <input type="number" id="meses" name="meses">
+                                </p>
+                                <p>
+                                    <label for="data">Qual a data de início?</label>
+                                    <input type="date" id="data" name="data">
+                                </p>
+                                <p>
+                                    <label for="setor">Qual o setor?</label>
+                                        <select name="setor" id="setor">
+                                            <option value="">Selecione</option>
+                                            <option value="AC">Compras</option>
+                                            <option value="AV">Vendas</option>
+                                        </select>
+                                </p>
+                                <p>
+                                    <label for="arquivo">Vai enviar algum arquivo?</label>
+                                    <input type="file" name="arquivo" placeholder="Arquivo">
+                                </p>
+                    </fieldset>
+                </form>
+        </fieldset>
+
+        <p id="voltar">
+            <a href="form_index.html">Volte ao indice</a>
+        </p>
+    </body>
+</html>

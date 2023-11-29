@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de Produtos</title>
+        <link rel="stylesheet" href="styleForm.css">
+    </head>
+    <body>
+        <h1>PRODUTOS</h1>
+            <fieldset>
+                <legend>Cadastro de Produtos</legend>
+                    <fieldset>
+                        <legend>Dados</legend>
+                            <form action="#" method="post">
+                                <p class="pNome">
+                                    <label for="nome">Insira o nome do produto</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome" required autocomplete="off" maxlength="50">
+                                </p>
+
+                                <p class="pId">
+                                    <label for="produtoID">Insira o ID do produto</label>
+                                    <input type="text" name="produtoID" id="produtoID" placeholder="ID" autocomplete="off" required>
+                                </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Especificação dos Produtos</legend>
+                            <p>
+                                <label for="tipoProduto">Qual setor pertence o produto?</label>
+                                <select>
+                                    <option value="AFL">Frios e Laticínios</option>
+                                    <option value="AAG">Açougue</option>
+                                    <option value="AF">Feira</option>
+                                    <option value="AL">Limpeza</option>
+                                    <option value="AH">Higiene</option>
+                                    <option value="AAL">Alimentício</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="forncedor">Insira o Nome do Fornecedor</label>
+                                <input type="text" name="forncedor" id="forncedor" placeholder="Fornecedor">
+                            </p>
+
+                            <br>
+
+                            <label for="obsevacoes">Se houver, insria alguma observação sobre o produto:</label>
+                            <p>
+                                <textarea name="obsevacoes" id="obsevacoes" placeholder="Obersevações"></textarea>
+                            </p>
+
+                            <input type="submit" value="ENVIAR" class="enviar">
+                            <input type="reset" value="LIMPAR" class="limpar">
+                        </form>
+                    </fieldset>
+            </fieldset>
+
+            <a href="form_index.html">Volte ao indice</a>
+    </body>
+</html>

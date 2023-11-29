@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de Clientes</title>
+        <link rel="stylesheet" href="styleForm.css">
+    </head>
+    <body>
+        <h1>CLIENTES</h1>
+            <fieldset>
+                <legend>Cadastro de Clientes</legend>
+                    <fieldset>
+                        <legend>Dados</legend>
+                            <form action="#" method="post">
+                                <p class="pNome">
+                                    <label for="nome">Insira seu nome</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome" required autocomplete="off" maxlength="50">
+                                </p>
+
+                                <p class="pCpf">
+                                    <label for="cpf">Insira seu CPF</label>
+                                    <input type="text" name="cpf" id="cpf" placeholder="CPF" autocomplete="off" maxlength="12" required>
+                                </p>
+
+                                <p class="pEmail">
+                                    <label for="email">Insira seu email</label>
+                                    <input type="email" id="email" placeholder="E-mail" required>
+                                </p>
+
+                                 <p class="pSenha">
+                                    <label for="senha">Insira sua senha</label>
+                                    <input type="password" id="senha" placeholder="Senha" required>
+                                </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Especificação do Cliente</legend>
+                            <label for="tipoCliente">Tipo de Cliente</label>
+                            <p class="pTipoCliente" name="tipoCliente" id="tipoCliente">
+                                <input type="radio" name="tipoCliente" value="0" checked> Novo
+                                <input type="radio" name="tipoCliente" value="1"> Já Cadasterado
+                            </p>
+
+                            <p class="pEndereco">
+                                <label for="endereco">Insira o Endereço</label>
+                                <input type="text" id="endereco" placeholder="Endereço">
+                            </p>
+
+                            <p class="pTelefone">
+                                <label for="telefone">Insira o telefone</label>
+                                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                            </p>
+
+                            <input type="submit" value="ENVIAR" class="enviar">
+                            <input type="reset" value="LIMPAR" class="limpar">
+                        </form>
+                    </fieldset>
+            </fieldset>
+
+            <a href="form_index.html">Volte ao indice</a>
+    </body>
+</html>

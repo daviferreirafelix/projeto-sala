@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Manual do Angular</title>
+        <link rel="shortcut icon" href="./img/angular_solidBlack.png" type="image/x-icon">
+        <link rel="stylesheet" href="../Styles/style.css">
+    </head>
+    <body>
+        <a name="topo"></a>
+        <h1>Angular: Manual do Usuário</h1>
+        <ul>
+            <li><a href="angular_index.html">Retornar</a></li>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#versoes">Versões</a></li>
+            <li><a href="#criandoProjeto">Criando o Primeiro Projeto</a></li>
+            <li><a href="#executandoProjeto">Eecutando o Primeiro Projeto</a></li>
+        </ul>
+        <img src="../Img/angular.jpg" alt="logotipo Angular" width="800px" height="500px;">
+        </a><h2>Introdução</h2><a name="introducao" href=""></a>
+            <p>
+                O Angular é um dos frameworks de desenvolvimento web mais populares e poderosos disponíveis atualmente. Desenvolvido e mantido pelo Google, ele é uma escolha preferida para a criação de aplicativos web robustos, dinâmicos e de alto desempenho. O Angular é especialmente conhecido por sua abordagem baseada em componentes e pela utilização extensiva do paradigma de programação reativa.
+                <br>
+                Originalmente lançado como "AngularJS", o framework passou por uma grande reformulação e foi renomeado para "Angular" a partir de sua versão 2. Essa nova versão trouxe uma arquitetura mais modular e orientada a componentes, permitindo que os desenvolvedores construam aplicativos complexos dividindo-os em partes menores e reutilizáveis. Essa abordagem promove a manutenção mais fácil, testabilidade e escalabilidade dos projetos.
+                <br>
+                O Angular utiliza uma linguagem de template declarativa, que combina HTML e extensões específicas do Angular, para definir a estrutura e a aparência dos componentes. Além disso, ele adota o TypeScript como sua linguagem principal, que é uma superconjunto do JavaScript, acrescentando recursos de tipagem estática e outros recursos avançados à linguagem.
+                <br>
+                Uma das características mais poderosas do Angular é a sua abordagem reativa, que permite a criação de aplicações responsivas por meio do uso de bibliotecas como o RxJS (Reactive Extensions for JavaScript). Isso facilita a manipulação de fluxos de dados assíncronos, como eventos do usuário, chamadas de API e outras operações que ocorrem ao longo do tempo.
+                <br>
+                Além disso, o Angular oferece um conjunto completo de ferramentas para testes, otimização de desempenho, internacionalização, roteamento e muito mais. Ele também possui uma forte comunidade de desenvolvedores, o que significa que você pode encontrar uma vasta quantidade de recursos, tutoriais e bibliotecas de terceiros para complementar o desenvolvimento de seus projetos.
+            </p>
+        <h2>Versões</h2><a name="versoes" href=""></a>
+        <h3>AngularJS (1.x)</h3>
+            <p>
+                A versão original do Angular, conhecida como AngularJS, lançada pelo Google. Ela estabeleceu as bases para a abordagem baseada em diretivas e data binding bidirecional, mas foi reescrita quase que completamente para a próxima versão.
+            </p>
+        <h3>Angular (versão 2.0 até a atual)</h3>
+            <p>
+                A partir da versão 2, o Angular passou por várias atualizações incrementais, introduzindo melhorias significativas em desempenho, recursos e arquitetura. O Angular 2 marcou uma mudança drástica na arquitetura em comparação com o AngularJS, introduzindo uma abordagem baseada em componentes. As versões subsequentes trouxeram melhorias em áreas como CLI (Command Line Interface), otimizações de tamanho, suporte a Progressive Web Apps (PWAs), melhoria no suporte a TypeScript, entre outros.
+                <br>
+                É importante notar que o Angular seguiu um padrão de versionamento semântico, onde as versões maiores (2, 4, 5, etc.) indicam mudanças significativas, enquanto as versões menores (2.1, 2.2, etc.) trazem melhorias e correções incrementais.
+            </p>
+        <h2>Instalando o Angular CLI</h2><a name="instalacao" href=""></a>
+        <img src="../Img/angular-cli-install.png" alt="tutorial instalar Angular" width="800px" height="600px;">
+            <P>
+                Primeiramente, é necessário averiguar se a versão do NodeJS em sua máquina é equivalente ao mínimo exigido pelo Angular. Após avaliado, execute o comando de instalação do CLI do Angular dentro de um terminal "npm install -g @angular/CLI" sem as aspas. NPM é o gerenciador de pacotes do NodeJS, install é o comando responsável pela instalação, -g indica que a instalação do CLI será global, ou seja, poderá ser executada em qualquer parte do computador, enquanto @angular/CLI é o nome do pacote que será instalado, o CLI do Angular, no nosso caso.
+                <br>
+                Para verificar se a instalação está OK, basta executar o comando "ng version" no terminal. Este comando indicará a versão instalada do Angular CLI, Angular Framework e TypeScript. 
+            </P>
+        <h2>Criando seu Primeiro Projeto</h2><a name="criandoProjeto" href=""></a>
+            <p>
+                Se você deseja criar um novo projeto Angular, você pode utilizar o Angular CLI para isso. Execute o seguinte comando para criar um novo projeto: "ng new 'nome do projeto'", sem as aspas duplas e dentro das aspas simples vai o nome do projeto. Após a execução, siga as instruções do Angular CLI para definição do tipo de Folhas de Estilo em Cascata (CSS) a ser usado e se irá fazer uso do Angular Routing.
+            </p>
+        <h2>Executando seu Primeiro Projeto</h2><a name="executandoProjeto" href=""></a>
+        <img src="../Img/iniciandoProjeto.png" alt="exemplo ng Serve" width="800px" height="600px;">
+            <p>
+                Após criar um projeto, você pode navegar até a pasta do projeto usando o terminal e executar o seguinte comando para iniciar um servidor de desenvolvimento: "ng serve".
+                <br>
+                Isso iniciará um servidor local e você poderá visualizar seu projeto Angular em um navegador acessando http://localhost:4200/.
+            </p>
+            
+            <a href="#">Topo</a>
+    </body>
+</html>

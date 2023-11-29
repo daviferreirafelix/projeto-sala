@@ -1,0 +1,30 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+label{
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 5px;
+}
+
+.enviar, .buscar{
+    background-color: rgba(0, 128, 0, 0.884);
+    color: white;
+    font-weight: bold;
+}
+
+.limpar{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
