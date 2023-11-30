@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -37,6 +41,29 @@ a:hover {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
 }
 
+#menu-resp{
+  display: none;
+}
+
+#menu-resp.responsivo{
+  border-radius: 1em;
+  display: flex;
+  background-color: #cccccc62;
+  font-size: 1em;
+  flex-direction: column;
+  margin-left: -70px;
+  margin-top: 150px;
+  padding: 12px;
+  align-items: center;
+  list-style-type: none;
+  width: 110px;
+}
+
+
+#menu-resp a{
+  margin: 5px;
+}
+
 #menu nav {
   width: 100%;
   display: flex;
@@ -45,7 +72,7 @@ a:hover {
 }
 
 .menu_section_left {
-  display: flex;
+  display: none;
   align-items: center;
   padding: 12px 16px;
   cursor: pointer;
@@ -53,9 +80,13 @@ a:hover {
 
 .menu_section_left .menu_responsivo {
   margin-right: 5px;
+  background-color: #ccc;
+  border-radius: 1em;
 }
 
 .menu_section_right {
+  position: fixed;
+  right: 0;
   margin-right: 14px;
   display: flex;
   align-items: center;
@@ -94,10 +125,6 @@ a:hover {
   height: 24px;
 }
 
-.content {
-  height: 100vh;
-}
-
 #principal {
   display: flex;
   align-items: center;
@@ -106,6 +133,8 @@ a:hover {
 }
 
 #principal .logo-atividades {
+  text-align: center;
+  width: 100%;
   font-size: 4em;
   font-weight: 700;
   height: 92px;
@@ -157,18 +186,28 @@ a:hover {
 
 /* CSS */
 
-#css-content {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+.content {
+  min-height: 100vh;
+}
+
+#css-content,
+#js-content,
+#form-content,
+#list-content {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.397);
   background-color: rgba(0, 0, 0, 0.568);
   padding: 25px;
   align-items: center;
   text-align: justify;
   width: 100%;
-  margin: auto;
+  margin: 50px auto;
   font-size: 1.3em;
 }
 
-#css-content h2 {
+#css-content h2,
+#js-content h2,
+#form-content h2,
+#list-content h2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -176,6 +215,7 @@ a:hover {
 .link img {
   width: 500px;
   height: 500px;
+  border-radius: 1em;
 }
 
 .link {
@@ -184,6 +224,63 @@ a:hover {
   align-items: top;
 }
 
-#css-content .texto-introducao {
+#css-content .texto-introducao,
+#js-content .texto-introducao,
+#form-content .texto-introducao,
+#list-content .texto-introducao {
   width: 50%;
+}
+
+
+/* FOOTER */
+
+footer {
+  border-top: 3px solid #ccc;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  text-align: center;
+  height: 80px;
+  align-items: center;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1250px){
+  #css-content .texto-introducao,
+  #js-content .texto-introducao,
+  #form-content .texto-introducao,
+  #list-content .texto-introducao {
+  width: 100%;
+}
+
+  .link{
+    flex-direction: column;
+  }
+
+  .link img {
+    margin: 25px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 1em;
+  }
+}
+
+@media (max-width: 650px){
+
+  #principal .logo-atividades{
+    margin-bottom: 50px;
+  }
+
+  .menu_section_right{
+    display: none;
+  }
+
+.menu_section_left {
+  display: flex;
+}
+
+  .menu_section_right_link{
+    display: none;
+  }
 }

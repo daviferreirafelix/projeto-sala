@@ -11,14 +11,20 @@
 
     <header id="menu">
         <nav>
-            <div class="menu_section_left">
+            <div class="menu_section_left" onclick="menuResponsivo()">
                     <img src="assets/burger-icon.svg" alt="Menu Hambúrger" class="menu_responsivo" >
                     Menu
+                    <ul id="menu-resp">
+                        <a href="#corpo">Index</a>
+                        <a href="./pages/Projetos/projetos.html">Tema dos Projetos</a>
+                        <a href="https://projeto-hotel.netlify.app/">Projeto em Angular</a>
+                    </ul>
             </div>
+            
             <div class="menu_section_right">
-                <a href="">Index</a>
-                <a href="./pages/Projetos/projetos.html">Tema dos Projetos</a>
-                <a href="https://projeto-hotel.netlify.app/">Projeto em Angular</a>
+                <a class="menu_section_right_link" href="#corpo">Index</a>
+                <a class="menu_section_right_link" href="./pages/Projetos/projetos.html">Tema dos Projetos</a>
+                <a class="menu_section_right_link" href="https://projeto-hotel.netlify.app/">Projeto em Angular</a>
                 <div class="menu_perfil">
                     <img src="assets/circle-frame.svg" alt="Círculo Colorido" class="circle_frame">
                     <img src="assets/logo_if_goiano.png" alt="Logotipo IF Goiano" id="logoIF">
@@ -31,11 +37,11 @@
         <div class="logo-atividades">
             Atividades de Sala
         </div>
-        <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade">
+        <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade" oninput="buscaPost()">
 
         <div id="posts-container">
             <div class="tile" title="CSS">
-                <a href="./pages/Css/css_intro.html">
+                <a href="#css-content">
                     <div class="tile-icon">
                         <img src="assets/CSS3.svg" alt="Logo CSS">
                     </div>
@@ -46,7 +52,7 @@
             </div>
 
             <div class="tile" title="JavaSript">
-                <a href="./pages/JS/js_intro.html">
+                <a href="#js-content">
                     <div class="tile-icon">
                         <img src="assets/js-logo.png" alt="Logo JS">
                     </div>
@@ -57,7 +63,7 @@
             </div>
 
             <div class="tile" title="Formulário">
-                <a href="./pages/Formularios/form_intro.html">
+                <a href="#form-content">
                     <div class="tile-icon">
                         <img src="assets/formulario.png" alt="Logo Formulários">
                     </div>
@@ -68,7 +74,7 @@
             </div>
 
             <div class="tile" title="Listas">
-                <a href="./pages/Listas/list_intro.html">
+                <a href="#list-content">
                     <div class="tile-icon">
                         <img src="assets/listas.png" alt="Logo Listas">
                     </div>
@@ -82,6 +88,7 @@
         <section id="css-content" class="content">
             <h2>O que é o CSS?</h2>
             <a class="link" href="./pages/Css/css_index.html">   
+                <img src="./assets/CSS3.svg" alt="Logo CSS">
                 <p class="texto-introducao">
                     O CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), representa um pilar essencial no universo do desenvolvimento web. Enquanto o HTML estrutura o conteúdo de uma página, é o CSS que confere estilo e apresentação, desempenhando um papel crucial na criação de interfaces visualmente atrativas e funcionais.
                     <br>
@@ -91,13 +98,62 @@
                     <br>
                     Aqui criamos alguns modelos de estilos CSS, tais quais incluem animações e estilizações variadas, indo desde movimentação de um elemento até a estilização e responsividade de uma página. Clique e veja algumas atividades feitas!
                 </p>
-                <img src="./assets/CSS3.svg" alt="Logo CSS">
+                
             </a>
         </section>
 
-        <section class="content">
-
+        <section id="js-content" class="content">
+            <h2>O que é o JavaScript?</h2>
+            <a class="link" href="./pages/JS/js_index.html">  
+                <img src="./assets/js-logo.png" alt="Logo JS"> 
+                <p class="texto-introducao">
+                    O JavaScript é uma linguagem de programação essencial no panorama do desenvolvimento web, desempenhando um papel crucial na criação de experiências interativas e dinâmicas para os usuários. Como uma linguagem de script do lado do cliente, o JavaScript permite a manipulação de elementos da página em tempo real, possibilitando a construção de aplicativos web sofisticados e altamente responsivos.
+                    <br>
+                    Uma das características distintivas do JavaScript é sua capacidade de adicionar interatividade dinâmica às páginas web. Por meio de eventos, manipulação de DOM (Document Object Model) e animações, os desenvolvedores podem criar interfaces que respondem instantaneamente às ações do usuário, proporcionando uma experiência envolvente e intuitiva.
+                    <br>    
+                    O JavaScript possibilita a integração de APIs (Interfaces de Programação de Aplicações), permitindo que os desenvolvedores incorporem dados externos e funcionalidades de terceiros em seus aplicativos web. Essa capacidade de acesso a recursos externos amplia significativamente as possibilidades de desenvolvimento e enriquece a experiência do usuário.  
+                    <br>
+                    Aqui criamos alguns exemplos do funcionamento do JS, tais quais incluem interações dinãmicas, requisições a API's externas e até validação de dados enviados por formulários. Clique e veja algumas atividades feitas!
+                </p>
+            </a>
         </section>
+
+        <section id="form-content" class="content">
+            <h2>O que são os Formulários?</h2>
+            <a class="link" href="./pages/Formularios/form_index.html">   
+                <img src="./assets/formulario.png" alt="Exemplo Formulário">
+                <p class="texto-introducao">
+                    Os formulários em HTML desempenham um papel crucial no desenvolvimento web, facilitando a interação entre usuários e sites. Essa ferramenta é essencial para a coleta eficiente de informações, possibilitando aos usuários inserir dados de maneira organizada, como nomes, endereços e e-mails.
+                    <br>
+                    Uma das principais funcionalidades dos formulários é a coleta estruturada de dados, contribuindo para a construção de bancos de dados robustos. Além disso, eles oferecem uma interação dinâmica, permitindo a criação de experiências personalizadas com campos de seleção, caixas de verificação e botões de rádio, tornando a interação mais intuitiva.
+                    <br>    
+                    Os formulários em HTML também incorporam a validação de dados do lado do cliente, assegurando que os dados inseridos atendam a critérios predefinidos antes de serem enviados ao servidor. Essa funcionalidade contribui para a integridade e qualidade dos dados recebidos.
+                    <br>
+                    Aqui criamos alguns modelos de formulários, tais quais incluem campos de inserção de dados variados, indo desde arquivos até textos e números. Clique e veja algumas atividades feitas!
+                </p>
+            </a>
+        </section>
+
+        <section id="list-content" class="content">
+            <h2>O que são as Listas?</h2>
+            <a class="link" href="./pages/Listas/list_index.html">  
+                <img src="./assets/listas.png" alt="Exemplo Lista"> 
+                <p class="texto-introducao">
+                    Os formulários em HTML desempenham um papel crucial no desenvolvimento web, facilitando a interação entre usuários e sites. Essa ferramenta é essencial para a coleta eficiente de informações, possibilitando aos usuários inserir dados de maneira organizada, como nomes, endereços e e-mails.
+                    <br>
+                    Uma das principais funcionalidades dos formulários é a coleta estruturada de dados, contribuindo para a construção de bancos de dados robustos. Além disso, eles oferecem uma interação dinâmica, permitindo a criação de experiências personalizadas com campos de seleção, caixas de verificação e botões de rádio, tornando a interação mais intuitiva.
+                    <br>    
+                    Os formulários em HTML também incorporam a validação de dados do lado do cliente, assegurando que os dados inseridos atendam a critérios predefinidos antes de serem enviados ao servidor. Essa funcionalidade contribui para a integridade e qualidade dos dados recebidos.
+                    <br>
+                    Aqui criamos alguns modelos de formulários, tais quais incluem campos de inserção de dados variados, indo desde arquivos até textos e números. Clique e veja algumas atividades feitas!
+                </p>
+            </a>
+        </section>
+
+        <footer>
+            Urutaí-GO,
+            2023
+        </footer>
         
     <script src="script.js"></script>
 </body>
