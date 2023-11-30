@@ -37,7 +37,17 @@
         <div class="logo-atividades">
             Atividades de Sala
         </div>
-        <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade" oninput="buscaPost()">
+        <div id="buscas" class="">
+            <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade" onclick="campoBusca()">
+            <div class="campo-resultado-busca">
+                <ul>
+                    <li class="links-menu-busca"><a href="#css-content">Entenda sobre CSS</a></li>
+                    <li class="links-menu-busca"><a href="#js-content">Entenda sobre JavaScript</a></li>
+                    <li class="links-menu-busca"><a href="#form-content">Entenda sobre Formulários</a></li>
+                    <li class="links-menu-busca"><a href="#list-content">Entenda sobre Listas</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div id="posts-container">
             <div class="tile" title="CSS">

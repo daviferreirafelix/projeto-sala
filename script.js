@@ -1,9 +1,9 @@
 let val = document.getElementById('menu-resp');
 let classe = document.getElementsByClassName('responsivo');
-let classes = document.getElementsByClassName('content');
-let inp = document.getElementById('buscar').innerText;
-
-console.log(classes)
+let contentClasses = document.getElementsByClassName('content');
+let campoBuscas = document.getElementById('buscas');
+let classeBusca = document.getElementsByClassName('campo-busca');
+let links = document.getElementsByClassName('links-menu-busca');
 
 function menuResponsivo(){
      if (classe.length == 0){
@@ -13,13 +13,17 @@ function menuResponsivo(){
      }
 }
 
-function buscaPost(){
-    for (let i = 0; i > classes.length; i++){
-        let texto = classes[i].innerText;
-
-        if (texto === inp.innerText){
-            console.log("certo")
+function campoBusca(){
+    if (classeBusca.length == 0){
+        campoBuscas.classList.add('campo-busca');
+        
+        for (let i = 0; i > links.length; i++){
+            links[i].style.display = 'block';
+        }
+    } else if (classeBusca.length > 0){
+        campoBuscas.classList.remove('campo-busca');
+        for (let i = 0; i > links.length; i++){
+            links[i].style.display = 'none';
         }
     }
-    
 }
