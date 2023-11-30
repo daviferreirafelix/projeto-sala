@@ -133,8 +133,11 @@ a:hover {
   width: 100%;
 }
 
-.campo-resultado-busca .links-menu-busca{
+#listaLinks{
   display: none;
+}
+
+.campo-resultado-busca .links-menu-busca{
   font-size: 1.5em;
   margin: 15px auto;
   width: 400px;

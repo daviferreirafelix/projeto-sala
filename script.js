@@ -1,9 +1,11 @@
 let val = document.getElementById('menu-resp');
 let classe = document.getElementsByClassName('responsivo');
-let contentClasses = document.getElementsByClassName('content');
 let campoBuscas = document.getElementById('buscas');
 let classeBusca = document.getElementsByClassName('campo-busca');
-let links = document.getElementsByClassName('links-menu-busca');
+let listaLinks = document.getElementById('listaLinks');
+let links = listaLinks.getElementsByTagName('li');
+let input = document.getElementById('buscar');
+let upperCase = input.value.toUpperCase();
 
 function menuResponsivo(){
      if (classe.length == 0){
@@ -16,14 +18,13 @@ function menuResponsivo(){
 function campoBusca(){
     if (classeBusca.length == 0){
         campoBuscas.classList.add('campo-busca');
-        
-        for (let i = 0; i > links.length; i++){
-            links[i].style.display = 'block';
-        }
+        listaLinks.style.display = 'block';
     } else if (classeBusca.length > 0){
         campoBuscas.classList.remove('campo-busca');
-        for (let i = 0; i > links.length; i++){
-            links[i].style.display = 'none';
-        }
+        listaLinks.style.display = 'none';
     }
+}
+
+function buscaDados(){
+
 }

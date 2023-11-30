@@ -38,9 +38,9 @@
             Atividades de Sala
         </div>
         <div id="buscas" class="">
-            <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade" onclick="campoBusca()">
+            <input type="text" name="name" id="buscar" placeholder="Busque o nome da atividade" onclick="campoBusca()" onkeyup="buscaDados()">
             <div class="campo-resultado-busca">
-                <ul>
+                <ul id="listaLinks">
                     <li class="links-menu-busca"><a href="#css-content">Entenda sobre CSS</a></li>
                     <li class="links-menu-busca"><a href="#js-content">Entenda sobre JavaScript</a></li>
                     <li class="links-menu-busca"><a href="#form-content">Entenda sobre Formulários</a></li>
