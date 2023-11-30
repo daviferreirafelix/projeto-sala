@@ -26,5 +26,18 @@ function campoBusca(){
 }
 
 function buscaDados(){
+    for (let i = 0; i < links.length; i++){
+        var linksLi = links[i].getElementsByTagName('a');
 
+        if(linksLi[i].innerHTML.indexOf(upperCase) > -1){
+            linksLi[i].style.display = 'block';
+        }else if (input.value == 0){
+            linksLi[i].style.display = 'block';
+        }
+        
+        else {
+            links[i].style.display = 'none'
+            linksLi[i].style.display = 'none';
+        }
+    }
 }
